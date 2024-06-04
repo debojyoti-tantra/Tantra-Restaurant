@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=LXGW+WenKai+TC&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav img {
+  height: 50px;
+  /* border: 2px solid darkgreen; */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #000000;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 40px;
+}
+
+header nav ul li a {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li a svg {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #526e00;
+  border: 3px solid #3c5c00;
+  height: 55px;
+  padding: 5px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: #edf0f7;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.main1-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.chota-kro {
+  font-family: monospace ;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: darkgreen;
+  background-color: #fffb94;
+  font-size: 0.75rem;
+}
+
+.enjoy{
+  font-size: 47px;
+  text-align: center;
+  font-family: "LXGW WenKai TC", cursive;
+  font-weight: bold;
+}
+
+.chota-bhai{
+  font-family: "Ubuntu", sans-serif;
+  color: darkred;
+  font-size: 0.85rem;
+}
+
+.btn{
+  font-size: 23px;
+  border: none;
+  background-color: #805500;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.btn:hover{
+  background-color: #53009c;
+}
+
+.btn a:hover{
+  color: #ffffff;
+}
+
+.btn a{
+  color: white;
+}
+
+.biryani{
+  width: 40vw;
+  border: none;
+  border-radius: 800px;
+}
+
+.main2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 15px;
+  gap: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+}
+
+.card section{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-image{
+  height: 100px;
+}
+
+.main3{
+  padding: 20px;
+  height: 40px;
+}
+
+#hand{
+  z-index: 2;
+  font-size: 34px;
+  position: absolute;
+  left: 10%;
+  animation-name: handanimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.btn2{
+  z-index: 1;
+  margin-left: 55%;
+  animation-name: box;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes handanimation{
+  form{
+    
+  }
+  to{
+    margin-left: 25%;
+  }
+}
+
+@keyframes box{
+  form{
+    
+  }
+  to{
+    color: white;
+    background-color: black;
+    margin-left: 35%;
+    box-shadow: 5px 0 7px 7px #3672ff;
+  }
+}
+
+h1{
+  font-family: "Pacifico", cursive;
+  font-weight:calc(10);
+  font-size: 4vmax;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+.main4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 15px;
+  gap: 10px;
+}
+
+.food-card{
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #faefe1;
+  box-shadow: 2px 2px 2px 2px #ababab;
+}
+
+.food-card h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  text-decoration: underline;
+}
+
+.g-col{
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  width: 30vw;
+  gap: 5px;
+  overflow: auto;
+  background-color: black;
+}
+
+.food-overflow{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px 4.5px;
+  background-color: white;
+}
+
+.food-card-section{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  height: 400px;
+}
+
+.food-card-section img{
+  width: 28vw;
+  border: none;
+  border-radius: 10px;
+}
+
+.food-name{
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 7px;
+  color: #ffffe8;
+  background-color: #2a4000;
+}
+
+.price{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #edecd3;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn3{
+  padding: 5px 10px;
+  background-color: #424242;
+}
+
+.btn3 a{
+  font-size: 20px;
+  color: white;
+}
+
+.btn3:hover{
+  background-color: black;
+}
+
+.scroll{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.main5{
+  display: grid;
+  margin: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.chefs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 2px #bfbfbf;
+}
+
+.chef{
+  width: 30vw;
+  height: 30vw;
+}
+
+.chefs span{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  color: darkgreen;
+}
+
+.chefs p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: red;
+}
+
+.main6-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+  margin: 15px;
+  background-color: #eb6d00;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 3px #c9c9c9;
+}
+
+.main6{
+  background-color: #ff9b4a;
+  border: none;
+  border-radius: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 1px 1px 3px 3px #8a3c00;
+}
+
+.book-card{
+  background-color: #e4ebf5;
+  padding: 20px;
+  border: 2px solid #ffb570; 
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 1px 1px 3px 3px #bf4c00;
+  /* width: 16.7vw; */
+}
+
+.book-card span{
+  color: #eb6d00;
+  font-size: 23px;
+  text-decoration: underline;
+}
+
+.btn4{
+  padding: 5px;
+  background-color: #eb6d00;
+}
+
+.book-card a{
+  color: red;
+  font-size: 18px;
+}
+
+.btn4 a{
+  font-size: 20px;
+  color: white;
+}
+
+.btn4:hover{
+  background-color: #a14000;
+}
+
+.book-card form{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.book-input{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.main7{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px;
+  gap: 30px;
+}
+
+.main71{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #d9d9d9;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.main71 span{
+  font-family: "Baloo Bhai 2", sans-serif;
+  /* font-weight: 400; */
+  font-size: 23px;
+  text-decoration: underline;
+  color: #750085;
+}
+
+.main72{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.main72 span{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+  font-weight: 400;
+  font-size: 34px;
+  text-decoration: underline;
+  color: #fa6400;
+}
+
+.main72 p{
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #6e6e6e;
+  /* justify-content: space-between; */
+} 
+
+.main71 img{
+  width: 35vw;
+}
+
+.main8{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 15px;
+}
+
+.main81{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10px;
+  font-family: "LXGW WenKai TC", cursive;
+  font-size: 19px;
+  padding-left: 30px;
+}
+
+.main81 span{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+
+.main81 span svg{
+  color: darkblue;
+}
+
+.main82{
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 28px;
+  background-color: #fad7ef;
+}
+
+.main82 form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.main82 form input{
+  width: 234px;
+  background-color: white;
+}
+
+.main82 form textarea{
+  background-color: white;
+}
+
+.main82 form button{
+  width: 234px;
+  /* box-sizing: border-box; */
+}
+
+footer{
+  background-color: #00052e;
+  padding: 15px;
+}
+
+.foo1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 15px 25px;
+}
+
+.foo1 ul span{
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.foo1 ul{
+  list-style: none;
+  line-height: 20px;
+}
+
+.foo1 ul li a {
+  font-family: sans-serif;
+  color: #e0e0e0;
+  font-size: 15px;
+}
+
+.foo2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px 20px;
+}
+
+.foo21{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foo22{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.foo22 svg{
+  color: white;
+}
+
+.foo2 img{
+  width: 20vw;
+  border: none;
+  border-radius: 10px;
+}
+
+.foo23{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foo2 span{
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12.5px;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 170px;
+    background-color: black;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    top: 35px;
+    right: 47px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .main1{
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .biryani{
+    width: 80vw;
+    justify-self: center;
+  }
+
+  .main2{
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+  }
+
+  main div div section:nth-child(2){
+    font-size: 12px;
+  }
+
+  .card{
+    flex-direction: column;
+  }
+
+  .card-image{
+    height: 50px;
+  }
+
+  .main4{
+    grid-template-columns: 1fr;
+  }
+
+  .g-col{
+    width: 85vw;
+  }
+
+  .food-card-section{
+    height: 40vmax;
+  }
+
+  .food-card-section img{
+    width: 65vw;
+    /* margin: 0 10vw; */
+  }
+
+  .main5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 2px grey;
+    background-color: antiquewhite;
+  }
+
+  .chefs{
+    background-color: white;
+  }
+
+  .chef{
+    width: 40vw;
+    height: 35vw;
+  }
+
+  .chefs p{
+    font-size: 10px;
+  }
+
+  .main6-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .book-card{
+    width: 50vw;
+  }
+
+  .btn4{
+    width: 47vw;
+  }
+
+  .book-card label input{
+    width: 47vw;
+    box-sizing: border-box;
+  }
+
+  .main7{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .main71 img{
+    width: 80vw;
+  }
+
+  .main8{
+    grid-template-columns: 1fr;
+  }
+
+  .foo1{
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .foo2{
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 628px){
+  .main4{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .g-col{
+    width: 30vw;
+  }
+
+  .food-card-section{
+    height: 400px;
+  }
+
+  .food-card-section img{
+    width: 27.5vw;
+  }
+
+  /* .main6-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .book-card{
+    width: 16.7vw;
+  } */
+}
