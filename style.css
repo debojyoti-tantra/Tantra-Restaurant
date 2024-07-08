@@ -232,6 +232,7 @@ h1{
   gap: 5px;
   overflow: auto;
   background-color: black;
+  height: 400px;
 }
 
 .food-overflow{
@@ -250,7 +251,6 @@ h1{
   justify-content: space-around;
   align-items: center;
   padding: 5px;
-  height: 400px;
 }
 
 .food-card-section img{
